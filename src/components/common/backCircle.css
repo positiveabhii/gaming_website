@@ -1,0 +1,270 @@
+@keyframes semicircle1 {
+  from {
+    width: 400px;
+    height: 200px;
+  }
+  to {
+    width: 700px;
+    height: 350px;
+  }
+}
+
+@keyframes semicircle2 {
+  from {
+    width: 400px;
+    height: 200px;
+  }
+  to {
+    width: 1000px;
+    height: 500px;
+  }
+}
+
+.semicircle {
+  width: 400px;
+  height: 200px;
+}
+
+.semicircle1InView {
+  animation: semicircle1 0.2s ease-in-out 0s forwards; /* Add delay of 2 seconds */
+}
+
+.semicircle2InView {
+  animation: semicircle2 0.5s ease-in-out 0.5s forwards; /* Add delay of 4 seconds */
+}
+
+@media only screen and (max-width: 1100px) {
+  @keyframes smallsemicircle1 {
+    from {
+      width: 300px;
+      height: 150px;
+    }
+    to {
+      width: 600px;
+      height: 300px;
+    }
+  }
+
+  @keyframes smallsemicircle2 {
+    from {
+      width: 300px;
+      height: 150px;
+    }
+    to {
+      width: 900px;
+      height: 450px;
+    }
+  }
+
+  .semicircle {
+    width: 300px;
+    height: 150px;
+  }
+
+  .semicircle1InView {
+    animation: smallsemicircle1 0.2s ease-in-out 0s forwards;
+  }
+
+  .semicircle2InView {
+    animation: smallsemicircle2 0.5s ease-in-out 0.5s forwards;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  @keyframes doublesmallsemicircle1 {
+    from {
+      width: 200px;
+      height: 100px;
+    }
+    to {
+      width: 500px;
+      height: 250px;
+    }
+  }
+
+  @keyframes doublesmallsemicircle2 {
+    from {
+      width: 200px;
+      height: 100px;
+    }
+    to {
+      width: 800px;
+      height: 400px;
+    }
+  }
+
+  .semicircle {
+    width: 200px;
+    height: 100px;
+  }
+
+  .semicircle1InView {
+    animation: doublesmallsemicircle1 0.2s ease-in-out 0s forwards;
+  }
+
+  .semicircle2InView {
+    animation: doublesmallsemicircle2 0.5s ease-in-out 0.5s forwards;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  @keyframes triplesmallsemicircle1 {
+    from {
+      width: 200px;
+      height: 100px;
+    }
+    to {
+      width: 550px;
+      height: 300px;
+    }
+  }
+
+  @keyframes triplesmallsemicircle2 {
+    from {
+      width: 200px;
+      height: 100px;
+    }
+    to {
+      width: 750px;
+      height: 400px;
+    }
+  }
+
+  .semicircle {
+    width: 200px;
+    height: 100px;
+  }
+
+  .semicircle1InView {
+    animation: triplesmallsemicircle1 0.2s ease-in-out 0s forwards;
+  }
+
+  .semicircle2InView {
+    animation: triplesmallsemicircle2 0.5s ease-in-out 0.5s forwards;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  @keyframes forthsmallsemicircle1 {
+    from {
+      width: 200px;
+      height: 100px;
+    }
+    to {
+      width: 450px;
+      height: 250px;
+    }
+  }
+
+  @keyframes forthsmallsemicircle2 {
+    from {
+      width: 200px;
+      height: 100px;
+    }
+    to {
+      width: 650px;
+      height: 350px;
+    }
+  }
+  .semicircle1InView {
+    animation: forthsmallsemicircle1 0.2s ease-in-out 0s forwards;
+  }
+
+  .semicircle2InView {
+    animation: forthsmallsemicircle2 0.5s ease-in-out 0.5s forwards;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  @keyframes forthsmallsemicircle1 {
+    from {
+      width: 200px;
+      height: 100px;
+    }
+    to {
+      width: 475px;
+      height: 200px;
+    }
+  }
+
+  @keyframes forthsmallsemicircle2 {
+    from {
+      width: 200px;
+      height: 100px;
+    }
+    to {
+      width: 550px;
+      height: 300px;
+    }
+  }
+  .semicircle1InView {
+    animation: forthsmallsemicircle1 0.2s ease-in-out 0s forwards;
+  }
+
+  .semicircle2InView {
+    animation: forthsmallsemicircle2 0.5s ease-in-out 0.5s forwards;
+  }
+  /* @keyframes sixthsmallsemicircle2 {
+    from {
+      width: 200px;
+      height: 100px;
+    }
+    to {
+      width: 450px;
+      height: 225px;
+    }
+  }
+
+  .semicircle2InView {
+    animation: sixthsmallsemicircle2 0.5s ease-in-out 0.5s forwards; 
+  } */
+}
+
+/* @media only screen and (max-width: 450px) {
+  @keyframes seventhsmallsemicircle2 {
+    from {
+      width: 200px;
+      height: 100px;
+    }
+    to {
+      width: 400px;
+      height: 200px;
+    }
+  }
+
+  .semicircle2InView {
+    animation: seventhsmallsemicircle2 0.5s ease-in-out 0.5s forwards; 
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  @keyframes eightsmallsemicircle1 {
+    from {
+      width: 200px;
+      height: 100px;
+    }
+    to {
+      width: 275px;
+      height: 137.5px;
+    }
+  }
+
+  @keyframes eightsmallsemicircle2 {
+    from {
+      width: 200px;
+      height: 100px;
+    }
+    to {
+      width: 350px;
+      height: 175px;
+    }
+  }
+
+  .semicircle1InView {
+    animation: eightsmallsemicircle1 0.2s ease-in-out 0s forwards; 
+  }
+
+  .semicircle2InView {
+    animation: eightsmallsemicircle2 0.5s ease-in-out 0.5s forwards; 
+  }
+} */

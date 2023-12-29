@@ -1,0 +1,184 @@
+.cardSlide {
+  position: absolute;
+  left: 13%;
+  transition: transform 1s ease-in-out;
+  bottom: 100px;
+}
+/* For scaling animation on hover */
+.cardScale,
+.cardScale1,
+.cardScale0 {
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardScale:hover {
+  transform: scale(1.1);
+}
+
+.cardScale0:hover {
+  transform: translateX(140%) scale(1.1);
+}
+
+.cardScale1:hover {
+  transform: translateX(270%) scale(1.1);
+}
+
+.cardSlideIn {
+  transform: translateX(140%);
+}
+
+.cardSlideIn2 {
+  transform: translateX(270%);
+}
+
+.cardSlideOut {
+  transform: translateX(0);
+}
+
+@media only screen and (max-width: 1285px) {
+  .cardSlideIn {
+    transform: translateX(130%);
+  }
+
+  .cardSlideIn2 {
+    transform: translateX(260%);
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .cardSlideIn {
+    transform: translateX(120%);
+  }
+
+  .cardSlideIn2 {
+    transform: translateX(240%);
+  }
+}
+
+@media only screen and (max-width: 1036px) {
+  .cardScale {
+    left: 9%;
+  }
+  .cardSlideIn {
+    transform: translateX(100%);
+  }
+
+  .cardSlideIn2 {
+    transform: translateX(220%);
+  }
+}
+@media only screen and (max-width: 980px) {
+  .cardScale {
+    left: 6%;
+  }
+  .cardSlideIn {
+    transform: translateX(85%);
+  }
+
+  .cardSlideIn2 {
+    transform: translateX(200%);
+  }
+}
+
+@media only screen and (max-width: 945px) {
+  .cardScale {
+    left: 3%;
+  }
+  .cardSlideIn {
+    transform: translateX(80%);
+  }
+
+  .cardSlideIn2 {
+    transform: translateX(190%);
+  }
+}
+
+@media only screen and (max-width: 845px) {
+  .cardScale {
+    left: 2%;
+  }
+  .cardSlideIn {
+    transform: translateX(70%);
+  }
+
+  .cardSlideIn2 {
+    transform: translateX(180%);
+  }
+}
+
+.carouselCard {
+  width: 250px;
+  height: 400px;
+  background-color: #ffa927;
+  border-radius: 25px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+/* Adjust the rotation and spacing based on the number of cards */
+.cardRight {
+  transform: rotateY(160deg) translateZ(300px) translateX(-30%) scaleX(-1);
+}
+
+.cardLeft {
+  transform: rotateY(200deg) translateZ(300px) translateX(30%) scaleX(-1);
+}
+
+/* Add an active-card class for the clicked card */
+.cardCenter {
+  transform: rotateY(0deg) translateZ(300px);
+  z-index: 1000;
+  transition: transform 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 555px) {
+  .cardRight {
+    transform: rotateY(160deg) translateZ(300px) translateX(-10%) scaleX(-1);
+  }
+
+  .cardLeft {
+    transform: rotateY(200deg) translateZ(300px) translateX(10%) scaleX(-1);
+  }
+
+  /* Add an active-card class for the clicked card */
+  .cardCenter {
+    transform: rotateY(0deg) translateZ(200px);
+    z-index: 1000;
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .cardRight {
+    transform: rotateY(160deg) translateZ(300px) translateX(5%) scaleX(-1);
+  }
+
+  .cardLeft {
+    transform: rotateY(200deg) translateZ(300px) translateX(-5%) scaleX(-1);
+  }
+
+  /* Add an active-card class for the clicked card */
+  .cardCenter {
+    transform: rotateY(0deg) translateZ(90px);
+    z-index: 1000;
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .cardRight {
+    transform: rotateY(160deg) translateZ(300px) translateX(15%) scaleX(-1);
+  }
+
+  .cardLeft {
+    transform: rotateY(200deg) translateZ(300px) translateX(-15%) scaleX(-1);
+  }
+
+  /* Add an active-card class for the clicked card */
+  .cardCenter {
+    transform: rotateY(0deg) translateZ(0px);
+    z-index: 1000;
+    transition: transform 0.5s ease-in-out;
+  }
+}
