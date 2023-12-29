@@ -112,16 +112,12 @@ const Contact = () => {
     </table>
   `;
 
-      const res = await sendContactForm({
+      await sendContactForm({
         subject: "Contacting Platform Play Venture",
         html: `<p>Form data:</p>${formDataTable}`,
       });
 
-      if (res.status === 200) {
-        toast.success("Thank you for contacting us");
-      } else {
-        toast.error("Error occured, try again later");
-      }
+      toast.success("Thank you for contacting us");
     } catch (error) {
       toast.error("Error occured, try again later");
     } finally {

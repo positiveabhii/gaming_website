@@ -26,7 +26,7 @@ const Footer = () => {
     </table>
   `;
     setloaderForEmail(true);
-    const res = await sendContactForm({
+    await sendContactForm({
       subject: "sent mail from footer of website",
       html: `<p>Form data:</p>${formDataTable}`,
     });
