@@ -99,13 +99,14 @@ const Insights = () => {
   }
 
   async function saveUserEmail() {
-    if (typeof window === "undefined") return;
-    if (!email) {
-      toast.error("Please provide your email to unlock this content");
-      setshowPopupForEmail([]);
-      return;
-    }
-    const formDataTable = `
+    try {
+      if (typeof window === "undefined") return;
+      if (!email) {
+        toast.error("Please provide your email to unlock this content");
+        setshowPopupForEmail([]);
+        return;
+      }
+      const formDataTable = `
     <table border="1" cellpadding="10">
       <tr>
         <th>Email</th>
@@ -115,19 +116,19 @@ const Insights = () => {
       </tr>
     </table>
   `;
-    setloaderForEmail(true);
-    const res = await sendContactForm({
-      subject: "Mail to unlock insight content",
-      html: `<p>Form data:</p>${formDataTable}`,
-    });
+      setloaderForEmail(true);
+      await sendContactForm({
+        subject: "Mail to unlock insight content",
+        html: `<p>Form data:</p>${formDataTable}`,
+      });
 
-    setloaderForEmail(false);
-    if (res.status === 200) {
+      setloaderForEmail(false);
+
       toast.success("Thank you for contacting us");
       window.localStorage.setItem("unlocked", "yes");
       openLinkInNewTab({ url: showPopupForEmail[1] });
       setshowPopupForEmail([]);
-    } else {
+    } catch (error) {
       setshowPopupForEmail([]);
       toast.error("Error occured, try again later");
     }
