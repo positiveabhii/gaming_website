@@ -32,12 +32,8 @@ const Footer = () => {
     });
 
     setloaderForEmail(false);
-    if (res.status === 200) {
-      toast.success("Thank you for contacting us");
-      window.localStorage.setItem("unlocked", "yes");
-    } else {
-      toast.error("Error occured, try again later");
-    }
+    toast.success("Thank you for contacting us");
+    window.localStorage.setItem("unlocked", "yes");
     setEmail("");
   }
 
