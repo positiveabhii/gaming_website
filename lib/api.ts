@@ -1,5 +1,5 @@
 export const sendContactForm = async (data: any) =>
-  fetch("/api/contact", {
+  fetch("https://platformplayventure.vercel.app/api/contact", {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
