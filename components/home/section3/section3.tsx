@@ -5,8 +5,16 @@ import { UseSizeContext } from "../../../state/context";
 import TitleText from "../../common/titleText";
 
 const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 640 },
+    items: 1,
+  },
   mobile: {
-    breakpoint: { max: 3000, min: 350 },
+    breakpoint: { max: 640, min: 0 },
     items: 1,
   },
 };

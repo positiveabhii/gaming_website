@@ -2,7 +2,6 @@ import "@/styles/globals.css";
 import { Fragment, useState } from "react";
 import type { AppProps } from "next/app";
 import SizeContextProvider from "../state/sizeContext";
-import "react-multi-carousel/lib/styles.css";
 import { Toaster } from "react-hot-toast";
 import ScrollContextProvider from "../state/scrollContext";
 import Navbar from "@/components/navbar/navbar";
@@ -11,6 +10,7 @@ import { faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Head from "next/head";
 import Footer from "@/components/footer/footer";
+import "react-multi-carousel/lib/styles.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [hoveringOnContact, sethoveringOnContact] = useState(false);

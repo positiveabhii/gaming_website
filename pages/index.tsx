@@ -3,15 +3,50 @@ import Section2 from "../components/home/section2/section2";
 import Section3 from "../components/home/section3/section3";
 import Section4 from "../components/home/section4/section4";
 import React, { useEffect, useState } from "react";
+import Modal from "react-modal";
 import Head from "next/head";
-import { getSEOById, SEO } from "../firebase/function";
+import { getPopup, getSEOById, SEO } from "../firebase/function";
 import { UseScrollContext } from "@/state/context";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faX } from "@fortawesome/free-solid-svg-icons";
+
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    minWidth: "250px",
+    minHeight: "200px",
+    maxWidth: "300px",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    backgroundColor: "#dadada", // Set the content background color
+    zIndex: 10000,
+    boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)", // Add a subtle shadow
+  },
+  overlay: {
+    backgroundColor: "rgba(0, 0, 0, 0.5)", // Set the overlay/backdrop color
+    zIndex: 9999, // Adjust the zIndex value
+  },
+};
 
 export default function Home() {
   const { scrollY } = UseScrollContext();
-
+  const [modalIsOpen, setIsOpen] = useState(false);
   const [seoContent, setseoContent] = useState<SEO | null>(null);
   const [showCookieNotice, setShowCookieNotice] = useState(false);
+
+  const [popupData, setpopupData] = useState<{
+    title: string;
+    description: string;
+    show: boolean;
+  } | null>(null);
+
+  function closeModal() {
+    sessionStorage.setItem("popupSeen", "true");
+    setIsOpen(false);
+  }
 
   useEffect(() => {
     // Check if the user has already accepted the cookie notice
@@ -30,6 +65,30 @@ export default function Home() {
     // Hide the cookie notice
     setShowCookieNotice(false);
   };
+
+  useEffect(() => {
+    (async () => {
+      const popup = await getPopup();
+
+      if (popup !== null && popup !== undefined) {
+        const hasSeen = sessionStorage.getItem("popupSeen");
+        console.log(popup, hasSeen, "rtgefd");
+
+        if (popup.show && hasSeen !== "true") {
+          setIsOpen(true);
+        } else {
+          setIsOpen(false);
+        }
+        setpopupData(
+          popup as {
+            title: string;
+            description: string;
+            show: boolean;
+          }
+        );
+      }
+    })();
+  }, []);
 
   useEffect(() => {
     (async () => {
@@ -55,6 +114,19 @@ export default function Home() {
         <meta name="description" content={seoContent?.description} />
         <meta name="keywords" content={seoContent?.metaTag}></meta>
       </Head>
+      <Modal isOpen={modalIsOpen} style={customStyles} contentLabel="relative">
+        <button className="absolute right-4" onClick={closeModal}>
+          <FontAwesomeIcon icon={faX} />
+        </button>
+        <div className="pt-14">
+          <h1 className="text-[#232323] mb-[0.5em] font-bold text-[1.75em]">
+            {popupData?.title}
+          </h1>
+          <p className="text-[#232323] font-medium mb-[0.5em] text-[1em]">
+            {popupData?.description}
+          </p>
+        </div>
+      </Modal>
       <section
         id="homePage"
         className="w-full flex min-h-screen flex-col justify-center"

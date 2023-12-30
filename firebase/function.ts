@@ -4,7 +4,6 @@ import {
   getDoc,
   query,
   orderBy,
-  addDoc,
   collection,
   getDocs,
   startAfter,
@@ -240,6 +239,17 @@ export async function getCaseStudiesById(id: string) {
     }
   } catch (error) {
     console.error("Error getting caseStudy document:", error);
+    return null;
+  }
+}
+export async function getPopup() {
+  try {
+    const popupDocRef = doc(collection(db, "popup"), "gSYBMPVIpksFTEv2kTti");
+    const popupDocSnapshot = await getDoc(popupDocRef);
+    const popupData = popupDocSnapshot.data();
+    return popupData;
+  } catch (error) {
+    console.error("Error getting popup document:", error);
     return null;
   }
 }
