@@ -1,6 +1,4 @@
-import { mailOptions } from "./../../config/nodemailer";
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { transporter } from "@/config/nodemailer";
+import { mailOptions, transporter } from "./../../config/nodemailer";
 import type { NextApiRequest, NextApiResponse } from "next";
 
 type Data = {
@@ -8,22 +6,23 @@ type Data = {
 };
 
 const handler = async (req: NextApiRequest, res: NextApiResponse<Data>) => {
-  console.log(req.body);
+  console.log(req.body, "brvfwcdws");
   if (req.method === "POST") {
-    const data = req.body;
-    console.log(data, "data");
-
     try {
+      let data = req.body;
+      console.log(data, "daregtr3htgeta");
       await transporter.sendMail({
         ...mailOptions,
         ...data,
       });
       res.status(200).json({ message: "moj krdi" });
     } catch (error: any) {
-      res.status(400).json({ message: error.message });
+      res.status(error.statusCode || 500).json({ message: error.message });
     }
   }
-  res.status(400).json({ message: "bad request" });
+
+  res.setHeader("Allow", "POST");
+  res.status(405).end("Method Not Allowed");
 };
 
 export default handler;
