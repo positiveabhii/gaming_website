@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://platformplayventure.vercel.app/api/ppv-sitemap
