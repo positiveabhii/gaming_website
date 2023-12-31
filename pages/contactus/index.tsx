@@ -118,9 +118,6 @@ const Contact = () => {
       });
 
       toast.success("Thank you for contacting us");
-    } catch (error) {
-      toast.error("Error occured, try again later");
-    } finally {
       // Clear all fields after successful submission
       setName("");
       setEmail("");
@@ -130,6 +127,18 @@ const Contact = () => {
       setRemarks("");
       setEnquiringFor("Enterprise Growth");
       setCompanyName("");
+    } catch (error) {
+      toast.error("Error occured, try again later");
+      // Clear all fields after successful submission
+      setName("");
+      setEmail("");
+      setPhoneNumber("");
+      setDesignation("");
+      setAnnualMarketingBudget("");
+      setRemarks("");
+      setEnquiringFor("Enterprise Growth");
+      setCompanyName("");
+    } finally {
       setloader(false);
     }
   };

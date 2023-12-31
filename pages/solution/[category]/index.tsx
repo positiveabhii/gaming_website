@@ -277,33 +277,35 @@ const Gaming = ({
           >
             Solutions for {category}
           </h1>
-          <h3
-            style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className="text-white rajdhani  max-w-[820px] mt-3 font-semibold text-md leading-[150.5%]"
-          >
-            {topText[category as keyof TopContent].p1}
-          </h3>
-          <h3
-            style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className="text-white rajdhani  max-w-[820px] mt-3 font-semibold text-md leading-[150.5%]"
-          >
-            {topText[category as keyof TopContent].p2}
-          </h3>
-          <h3
-            style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className="text-white rajdhani  max-w-[820px] mt-3 font-semibold text-md leading-[150.5%]"
-          >
-            {topText[category as keyof TopContent].p3}
-          </h3>
-          <h3
-            style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className="text-white rajdhani  max-w-[820px] mt-3 font-semibold text-md leading-[150.5%]"
-          >
-            {topText[category as keyof TopContent].p4}
-          </h3>
+          <div className="max-w-[820px]">
+            <h3
+              style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
+              className="text-white rajdhani mt-3 font-semibold text-md leading-[150.5%]"
+            >
+              {topText[category as keyof TopContent].p1}
+            </h3>
+            <h3
+              style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
+              className="text-white rajdhani mt-3 font-semibold text-md leading-[150.5%]"
+            >
+              {topText[category as keyof TopContent].p2}
+            </h3>
+            <h3
+              style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
+              className="text-white rajdhani mt-3 font-semibold text-md leading-[150.5%]"
+            >
+              {topText[category as keyof TopContent].p3}
+            </h3>
+            <h3
+              style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
+              className="text-white rajdhani mt-3 font-semibold text-md leading-[150.5%]"
+            >
+              {topText[category as keyof TopContent].p4}
+            </h3>
+          </div>
           <h3
             style={{ textShadow: " 0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className={`text-[#FFA115] rajdhani font-normal mt-3 text-[28px] leading-[137.5%]`}
+            className={`text-[#FFA115] rajdhani text-start font-normal mt-3 text-[28px] leading-[137.5%]`}
           >
             Game On!
           </h3>

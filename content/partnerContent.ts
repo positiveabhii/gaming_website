@@ -20,5 +20,5 @@ export const partnerTopContent = [
 
   "When we create marketing or technology strategies for you, we also give you the option of receiving proposals for implementing the strategy from any 3 of our partners. You can then interview them and decide whether you want to opt for their services.",
 
-  "If you choose to work with any of our preferred partners, we also take the responsibility of governing the project so that the deliverables are satisfactorily executed.",
+  "If you choose to work with any of our preferred partners below, we also take the responsibility of governing the project so that the deliverables are satisfactorily executed.",
 ];
