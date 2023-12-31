@@ -6,7 +6,6 @@ import Card from "./card";
 import css from "./card.module.css";
 import BackCircles from "../../common/backCircles";
 import TitleText from "../../common/titleText";
-import { useSwipeable } from "react-swipeable";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronCircleLeft,
@@ -27,17 +26,6 @@ const Section2 = () => {
     setActiveCardIndex(index);
   };
   const navigate = useRouter();
-
-  const handlers = useSwipeable({
-    onSwipedLeft: () =>
-      handleCardClick(
-        activeCardIndex === 0 ? 1 : activeCardIndex === 1 ? 2 : 0
-      ),
-    onSwipedRight: () =>
-      handleCardClick(
-        activeCardIndex === 2 ? 1 : activeCardIndex === 1 ? 0 : 2
-      ),
-  });
 
   return (
     <section
@@ -109,7 +97,6 @@ const Section2 = () => {
           </div>
         ) : (
           <div
-            {...handlers}
             ref={ref}
             style={{
               touchAction: "none",
