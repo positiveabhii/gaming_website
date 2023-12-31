@@ -2,7 +2,7 @@ export const cardOnHero = [
   {
     image: "/startup.png",
     text: "I’m a Startup Founder looking to brand & market a product or service",
-    navigate: "/solution/Startup",
+    navigate: "/solution/Startups",
   },
   {
     image: "/cxo.png",

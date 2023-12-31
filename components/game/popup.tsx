@@ -212,12 +212,19 @@ const GamePopup = ({
                 </button>
               </div>
               {stepIndex ===
-                Object.entries(popupContent[category]).length - 1 && (
+              Object.entries(popupContent[category]).length - 1 ? (
                 <button
                   onClick={() => navigate.push("/contactus")}
                   className="bg-[#FFA115] font-bold p-2 w-[80%] rounded-md"
                 >
-                  BOOK YOUR FREE PERSONALIZED CONSULTING SESSION
+                  BOOK YOUR FREE PERSONALIZED CONSULTING WORKSHOP
+                </button>
+              ) : (
+                <button
+                  onClick={() => navigate.push("/contactus")}
+                  className="bg-[#FFA115] font-bold p-2 w-[80%] rounded-md"
+                >
+                  Get Free Consulting
                 </button>
               )}
             </div>

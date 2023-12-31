@@ -64,7 +64,7 @@ export default function App({ Component, pageProps }: AppProps) {
           >
             {hoveringOnContact && (
               <div>
-                <h1 className="text-[#dadada]">Connect with us</h1>
+                <h1 className="text-[#dadada]"> Connect with our Experts</h1>
               </div>
             )}
             <div className="flex items-center gap-3 ">

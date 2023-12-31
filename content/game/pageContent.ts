@@ -7,6 +7,7 @@ import {
 
 const gameBelowContent: GameBelowContent = {
   Enterprises: {
+    h1: "How We Help Enterprises",
     header:
       "Platform Play Venture will partner you as your strategy consultants in your quest for achieving growth and sustainability for your enterprise through marketing and branding initiatives. We will be able to assist you in the following ways",
     bulletins: [
@@ -27,14 +28,19 @@ const gameBelowContent: GameBelowContent = {
         title: "Preparing transformation and growth strategies",
         img: "/box4.png",
       },
-      { title: "Formulating the Marketing blueprint", img: "/box5.png" },
       {
         title:
-          "Goals and KPIs formulation for all marketing and branding activities and processes",
+          "Creating and documenting the Marketing strategy using marketing frameworks",
+        img: "/box5.png",
+      },
+      {
+        title:
+          "Formulating goals and KPIs for all marketing and branding activities and processes",
         img: "/box6.png",
       },
       {
-        title: "Scoping for Customer Acquisition Portal and/or app",
+        title:
+          "Creating the scope and features BRD for the brand’s website and/or app",
         img: "/box1.png",
       },
       {
@@ -42,7 +48,11 @@ const gameBelowContent: GameBelowContent = {
           "Identifying expert vendors for technology, branding and marketing initiatives",
         img: "/box2.png",
       },
-      { title: "Creating Content and Media frameworks", img: "/box3.png" },
+      {
+        title:
+          "Creating the content and media frameworks for the brand’s marketing communications",
+        img: "/box3.png",
+      },
       {
         title:
           "Project management and governance with creation of reporting formats",
@@ -50,7 +60,8 @@ const gameBelowContent: GameBelowContent = {
       },
     ],
   },
-  Startup: {
+  Startups: {
+    h1: "How We Help Startups",
     header:
       "Platform Play Venture will partner you as your strategy consultants throughout the lifecycle of your startup. From the planning and validation stage to the launch to the growth, we will be involved in the following ways",
     bulletins: [
@@ -66,17 +77,29 @@ const gameBelowContent: GameBelowContent = {
       },
       {
         title:
-          "Goals and KPIs formulation for all marketing and branding activities and processes",
+          "Formulating goals and KPIs for all marketing and branding activities and processes",
         img: "/box3.png",
       },
-      { title: "Solution scoping", img: "/box4.png" },
-      { title: "Prototype planning", img: "/box5.png" },
+      {
+        title:
+          "Creating the scope and features of the solution the brand wants to offer",
+        img: "/box4.png",
+      },
+      {
+        title:
+          " If the solution involves an online platform or an app, we help in planning the prototype",
+        img: "/box5.png",
+      },
       {
         title:
           "Vendor identification for technology, branding and marketing initiatives",
         img: "/box6.png",
       },
-      { title: "Content and Media framework creation", img: "/box1.png" },
+      {
+        title:
+          "Creating the content and media frameworks for the brand’s marketing communications",
+        img: "/box1.png",
+      },
       {
         title: "Planning high-performance marketing initiatives for growth",
         img: "/box2.png",
@@ -89,6 +112,7 @@ const gameBelowContent: GameBelowContent = {
     ],
   },
   Innovators: {
+    h1: "How We Help Innovators",
     header:
       "Platform Play Venture will partner you as your strategy consultants in your journey of taking your amazing idea for a platform or app from dream to reality. We will be able to assist you in these areas",
     bulletins: [
@@ -102,8 +126,16 @@ const gameBelowContent: GameBelowContent = {
           "Idea feasibility validation through market, competitors and consumer research",
         img: "/box2.png",
       },
-      { title: "Solution scoping", img: "/box3.png" },
-      { title: "Prototype planning", img: "/box4.png" },
+      {
+        title:
+          "Creating the scope and features of the solution the brand wants to offer",
+        img: "/box3.png",
+      },
+      {
+        title:
+          " If the solution involves an online platform or an app, we help in planning the prototype",
+        img: "/box4.png",
+      },
       {
         title: "Content framework creation for the platform/app",
         img: "/box5.png",
@@ -120,12 +152,12 @@ const gameBelowContent: GameBelowContent = {
       },
       {
         title:
-          "Goals and KPIs formulation for all marketing and branding activities and processes",
+          "Formulating goals and KPIs for all marketing and branding activities and processes",
         img: "/box2.png",
       },
       {
         title:
-          "Content and Media framework creation for platform/app promotions",
+          "Creating the content and media frameworks for the brand’s marketing communications for platform/app promotions",
         img: "/box3.png",
       },
       {
@@ -146,16 +178,19 @@ const topText: TopContent = {
     p1: "Hi there! Exponential growth is the Holy Grail of every enterprise, and as the CEO or CMO, we know you understand the critical role of marketing and branding activities in sustained business growth and profitability. We appreciate that you have decided to explore the branding and marketing routes to achieving phenomenal growth for your organization.",
     p2: "Play the Growth game with PPV and create your own path for your brand’s success. En route, collect your trusted “growth compass” to set your brand off in the right direction, take a look at the hard facts and take some bold decisions. By the end, you’ll forge yourself a checklist of interventions you’ll want to make in your brand’s game plan to achieve phenomenal growth.",
     p3: "Once you play through to the end, you’ll also be able to book an absolutely free workshop with PPV experts to discuss growth ideas specific to your enterprise.",
+    p4: "There are 6 levels in all, each with 5 collectibles. The entire game will take approximately 6 to 8 minutes to play through.",
   },
-  Startup: {
+  Startups: {
     p1: "Hi, there! We salute you for taking this decision to start your own venture. All the uncertainty of the future can be scary, but with a little bit of planning you can easily wrap your mind around the huge challenge of launching your startup.",
     p2: "Play the Startup game with PPV and complete the tasks and hurdles you’ll need to master for making your brand a success. Munch up the actionables, pick up the right results and take decisive steps towards making your dream idea work for you and your future customers.",
     p3: "Once you play through to the end, you’ll also be able to book an absolutely free workshop with PPV experts to discuss launch and growth ideas specific to your startup.",
+    p4: "There are 6 levels in all, each with 5 collectibles. The entire game will take approximately 6 to 8 minutes to play through.",
   },
   Innovators: {
     p1: "Hi there! People out there are always looking for smart and effective solutions that fulfill their need to make life easier or to access useful information. And of course, in today’s digitally disrupted ecosystem, users would prefer to access such tools online. If you have a great idea for such a platform, app, or tool that fills a gap in the market, you’ve come to the right place.",
     p2: "Play the Platform Game with PPV and get know-how on what it takes to build on your unique idea and create an amazing online platform, portal or app. Work your way past each milestone and go live with your very own site or app so you can reach the right audience with your solution.",
     p3: "Once you play through to the end, you’ll also be able to book an absolutely free workshop with PPV experts to discuss development and launch interventions specific to your platform/app",
+    p4: "There are 5 levels in all, each with 5 collectibles. The entire game will take approximately 6 to 8 minutes to play through.",
   },
 };
 
@@ -166,22 +201,22 @@ export const lastCongratsMsg: LastCongratsMsg = {
     "Your brand assets look great now!",
     "Congratulations! Martech successfully integrated!",
     "Congratulations! Digital Marketing optimized!",
-    "Congratulations! You’re all set to fast-track your Enterprise’s growth!",
+    "You’ve won yourself a free, no-strings-attached personalized one-on-one workshop where you can connect with PPV experts and discuss business growth ideas. You’re all set to fast-track your Enterprise’s growth!",
   ],
-  Startup: [
+  Startups: [
     "You’re headed for likely success!",
     "Your Marketing Strategy is in place!",
     "Your brand’s visual communication is sorted!",
     "Your Communication & Media Plan are ready!",
     "Your Media Channels have been set up!",
-    "You’re all set to put your Startup on the Success Path!",
+    "You’ve won yourself a free, no-strings-attached personalized one-on-one workshop where you can connect with PPV experts and discuss business growth ideas. You’re all set to put your Startup on the success path!",
   ],
   Innovators: [
     "Your Platform’s framework is now ready!",
     "Your brand’s visual communication is sorted!",
     "Your Platform/App has been successfully tested!",
     "Your brand’s Marketing Roadmap is ready!",
-    "Your platform or app is set to delight users!",
+    "You’ve won yourself a free, no-strings-attached personalized one-on-one workshop where you can connect with PPV experts and discuss business growth ideas. Your platform or app is all set to delight users!",
   ],
 };
 
@@ -193,7 +228,7 @@ const popupContent: PopupContent = {
       noOfPopup: 3,
       levelTitle: "Status-quo Check",
       popup3:
-        "Navigate using the arrow keys (PC) or swipe on your mobile device screen to collect the icons inside the maze. Each icon represents a step in the process of collecting data about where your company stands right now in your marketing and branding efforts and performance. Press SPACE or tap the PAUSE button to pause the game any time.",
+        "Navigate using the arrow keys (PC) or swipe on your mobile device screen to collect the icons inside the maze. Each icon represents a step in the process of collecting data about where your company stands right now in your marketing and branding efforts and performance. Tap or click anywhere on the game board to pause to pause the game any time.",
       popup1:
         "Future brand growth begins in an audit of present brand performance. This is where you begin to stir things up by taking stock of how things are running today on the branding and marketing fronts.",
       popup2:
@@ -519,7 +554,7 @@ const popupContent: PopupContent = {
       ],
     },
   ],
-  Startup: [
+  Startups: [
     {
       speed: 15,
       noOfGhost: 0,
@@ -528,7 +563,7 @@ const popupContent: PopupContent = {
       popup1:
         "How will you understand whether your product/service will succeed in the market? In this level, complete the first step to launching a legendary startup – decide to start!",
       popup2:
-        "Navigate using the arrow keys (PC) or swipe on your mobile device screen to collect the icons inside the maze. Each icon is a step in the process of deciding whether to launch your product/service or not. Press SPACE or tap the PAUSE button to pause the game any time.",
+        "Navigate using the arrow keys (PC) or swipe on your mobile device screen to collect the icons inside the maze. Each icon is a step in the process of deciding whether to launch your product/service or not. Tap or click anywhere on the game board to pause to pause the game any time.",
       actions: [
         {
           icon: "/gameIcons/72.png",
@@ -847,7 +882,7 @@ const popupContent: PopupContent = {
       noOfGhost: 0,
       noOfPopup: 3,
       popup3:
-        "Navigate using the arrow keys (PC) or swipe on your mobile device screen to collect the icons inside the maze.  Each icon is a step in the process of strategy and scoping of your platform or app. Press SPACE or tap the PAUSE button to pause the game any time.",
+        "Navigate using the arrow keys (PC) or swipe on your mobile device screen to collect the icons inside the maze.  Each icon is a step in the process of strategy and scoping of your platform or app. Tap or click anywhere on the game board to pause to pause the game any time.",
       levelTitle: "Scope the Platform or App",
       popup1:
         "First up, it’s essential to identify the must-have features for your platform. This ensures the success of the platform and also makes the prototyping and development easier.",

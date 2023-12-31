@@ -59,7 +59,7 @@ const Section2 = () => {
             </div>
             <Card
               onClick={() => {
-                navigate.push("/solution/Startup");
+                navigate.push("/solution/Startups");
               }}
               // ${
               //   width > 1100

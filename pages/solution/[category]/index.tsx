@@ -29,6 +29,7 @@ import {
   InferGetStaticPropsType,
 } from "next";
 import ScrollToElement from "@/components/common/scrollElement";
+import TitleText from "@/components/common/titleText";
 
 const responsive = {
   mobile: {
@@ -42,8 +43,6 @@ export type GhostPopupState = [boolean, number, () => void];
 const Gaming = ({
   category,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  console.log(category, "category");
-
   const navigate = useRouter();
 
   const { width } = UseSizeContext();
@@ -170,7 +169,7 @@ const Gaming = ({
 
   useEffect(() => {
     if (
-      category === "Startup" ||
+      category === "Startups" ||
       category === "Innovators" ||
       category === "Enterprises"
     ) {
@@ -244,7 +243,7 @@ const Gaming = ({
 
     if (category !== undefined) {
       if (
-        category !== "Startup" &&
+        category !== "Startups" &&
         category !== "Innovators" &&
         category !== "Enterprises"
       ) {
@@ -280,21 +279,27 @@ const Gaming = ({
           </h1>
           <h3
             style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className="text-[#dadada] rajdhani  max-w-[820px] mt-3 font-semibold text-md leading-[150.5%]"
+            className="text-white rajdhani  max-w-[820px] mt-3 font-semibold text-md leading-[150.5%]"
           >
             {topText[category as keyof TopContent].p1}
           </h3>
           <h3
             style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className="text-[#dadada] rajdhani  max-w-[820px] mt-3 font-semibold text-md leading-[150.5%]"
+            className="text-white rajdhani  max-w-[820px] mt-3 font-semibold text-md leading-[150.5%]"
           >
             {topText[category as keyof TopContent].p2}
           </h3>
           <h3
             style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className="text-[#dadada] rajdhani  max-w-[820px] mt-3 font-semibold text-md leading-[150.5%]"
+            className="text-white rajdhani  max-w-[820px] mt-3 font-semibold text-md leading-[150.5%]"
           >
             {topText[category as keyof TopContent].p3}
+          </h3>
+          <h3
+            style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
+            className="text-white rajdhani  max-w-[820px] mt-3 font-semibold text-md leading-[150.5%]"
+          >
+            {topText[category as keyof TopContent].p4}
           </h3>
           <h3
             style={{ textShadow: " 0px 4px 4px rgba(0, 0, 0, 0.25)" }}
@@ -616,7 +621,11 @@ const Gaming = ({
           </div>
         </div>
 
-        <div className="mx-auto z-[100] relative w-[90%] text-center flex flex-col items-center justify-center gap-4">
+        <div className="mx-auto z-[100] relative w-[90%] mt-6 text-center flex flex-col items-center justify-center gap-4">
+          <TitleText
+            text={gameBelowContent[category as keyof GameBelowContent].h1}
+            isAbsolute={false}
+          />
           <h3
             style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
             className="text-[#dadada] rajdhani  max-w-[820px] mt-3 font-semibold text-md leading-[150.5%]"
@@ -625,7 +634,7 @@ const Gaming = ({
           </h3>
           <div className="w-full">
             {width > 550 ? (
-              <div className=" w-full max-w-[1000px] mx-auto flex flex-wrap items-center justify-center my-4">
+              <div className=" w-full max-w-[1000px] mx-auto flex flex-wrap gap-6 items-center justify-center my-4">
                 {gameBelowContent[
                   category as keyof GameBelowContent
                 ].bulletins.map((info, index) => (
@@ -633,7 +642,7 @@ const Gaming = ({
                     style={{
                       boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
                     }}
-                    className="w-[257px] relative h-[246px] my-3 mx-auto px-3 pt-12 pb-1 flex flex-col items-start justify-between rounded-[22px] border-[#FFA927] bg-[#3B3B3B] border-solid border-2"
+                    className="w-[257px] relative h-[246px] my-3 px-3 pt-12 pb-1 flex flex-col items-start justify-between rounded-[22px] border-[#FFA927] bg-[#3B3B3B] border-solid border-2"
                     key={index}
                   >
                     <p className="rajdhani text-[14px] text-[#dadada]">
@@ -723,7 +732,7 @@ export const getStaticPaths: GetStaticPaths = () => {
     paths: [
       { params: { category: "Enterprises" } },
       { params: { category: "Innovators" } },
-      { params: { category: "Startup" } },
+      { params: { category: "Startups" } },
     ],
     fallback: false,
   };

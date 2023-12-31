@@ -13,6 +13,7 @@ export type PopupContent = {
 
 export type GameBelowContent = {
   [key: string]: {
+    h1: string;
     header: string;
     bulletins: { title: string; img: string }[];
   };
@@ -31,6 +32,7 @@ export type TopContent = {
     p1: string;
     p2: string;
     p3: string;
+    p4: string;
   };
 };
 

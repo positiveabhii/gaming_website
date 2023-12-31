@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div id="navbar" className="commissioner">
-      <nav className="flex max-w-[1300px] mx-auto items-center justify-between px-6 lg:px-10">
+      <nav className="flex max-w-[1300px] mx-auto items-center justify-between px-4">
         <a href="/" className="relative">
           <img
             className="cursor-pointer"
@@ -58,7 +58,7 @@ const Navbar = () => {
                 <a href="/solution/Enterprises">Solutions for Enterprises</a>
               </li>
               <li className="whitespace-nowrap mt-2 text-black cursor-pointer hover:opacity-70">
-                <a href="/solution/Startup">Solutions for Startups</a>
+                <a href="/solution/Startups">Solutions for Startups</a>
               </li>
               <li className="whitespace-nowrap mt-2 text-black cursor-pointer hover:opacity-70">
                 <a href="/solution/Innovators">Solutions for Innovators</a>
@@ -96,6 +96,14 @@ const Navbar = () => {
           </li>
           <li className="cursor-pointer">
             <a href="/contactus">Contact Us</a>
+          </li>
+          <li className="cursor-pointer">
+            <a
+              href="tel:+919830601360
+"
+            >
+              Call Now
+            </a>
           </li>
         </ul>
       </nav>
@@ -143,7 +151,7 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li className="whitespace-nowrap mt-2 text-black cursor-pointer hover:opacity-70">
-                    <a href="/solution/Startup">Solutions for Startups</a>
+                    <a href="/solution/Startups">Solutions for Startups</a>
                   </li>
                   <li className="whitespace-nowrap mt-2 text-black cursor-pointer hover:opacity-70">
                     <a href="/solution/Innovators"> Solutions for Innovators</a>

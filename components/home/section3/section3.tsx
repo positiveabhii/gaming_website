@@ -24,14 +24,11 @@ const Section3 = () => {
 
   return (
     <section className="my-12">
-      <TitleText
-        isAbsolute={false}
-        text=" Platform Play Venture has expertise in"
-      />
+      <TitleText isAbsolute={false} text="Our Areas of Expertise" />
       {width > 550 ? (
         <>
           <div className="grid w-full max-w-[1300px] mx-auto grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-4">
-            {boxes.slice(3).map((info, index) => (
+            {boxes.slice(0,4).map((info, index) => (
               <div
                 style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
                 className="w-[257px] relative h-[246px] my-3 mx-auto px-3 pt-6 pb-1 flex flex-col items-start justify-between rounded-[22px] border-[#FFA927] bg-[#3B3B3B] border-solid border-2"
@@ -57,7 +54,7 @@ const Section3 = () => {
             ))}
           </div>
           <div className="grid w-full lg:w-[75%] max-w-[1300px] mx-auto grid-cols-2 md:grid-cols-3 my-4">
-            {boxes.slice(0, 3).map((info, index) => (
+            {boxes.slice(4).map((info, index) => (
               <div
                 style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
                 className="w-[257px] relative h-[246px] my-3 mx-auto px-3 pt-6 pb-1 flex flex-col items-start justify-between rounded-[22px] border-[#FFA927] bg-[#3B3B3B] border-solid border-2"

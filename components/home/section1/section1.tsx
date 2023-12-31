@@ -137,7 +137,8 @@ const Section1 = () => {
           style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
           className="text-[#dadada] rajdhani w-[300px] mt-3 font-semibold text-md leading-[100.5%]"
         >
-          Research Backed and ROI Driven Business consulting.
+          Research-backed bespoke strategy roadmaps & project management for
+          Branding, Marketing, Brand Communications, Portals/Apps & Martech
         </h3>
         {/* <button className="bg-[#000000] rajdhani w-[150px] text-[#F2F2F2] flex items-center justify-center gap-2 rounded-full border-2 border-solid border-[#F2F2F2] py-2 px-3 mt-6">
           <span>Get Started</span>
