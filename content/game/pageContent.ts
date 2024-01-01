@@ -41,22 +41,22 @@ const gameBelowContent: GameBelowContent = {
       {
         title:
           "Creating the scope and features BRD for the brand’s website and/or app",
-        img: "/box1.png",
+        img: "/box7.png",
       },
       {
         title:
           "Identifying expert vendors for technology, branding and marketing initiatives",
-        img: "/box2.png",
+        img: "/box8.png",
       },
       {
         title:
           "Creating the content and media frameworks for the brand’s marketing communications",
-        img: "/box3.png",
+        img: "/box9.png",
       },
       {
         title:
           "Project management and governance with creation of reporting formats",
-        img: "/box4.png",
+        img: "/box10.png",
       },
     ],
   },
@@ -98,16 +98,16 @@ const gameBelowContent: GameBelowContent = {
       {
         title:
           "Creating the content and media frameworks for the brand’s marketing communications",
-        img: "/box1.png",
+        img: "/box7.png",
       },
       {
         title: "Planning high-performance marketing initiatives for growth",
-        img: "/box2.png",
+        img: "/box8.png",
       },
       {
         title:
           "Project management and governance with creation of reporting formats",
-        img: "/box3.png",
+        img: "/box9.png",
       },
     ],
   },
@@ -148,26 +148,26 @@ const gameBelowContent: GameBelowContent = {
       {
         title:
           "Branding & marketing strategy formulation for platform/app promotion",
-        img: "/box1.png",
+        img: "/box7.png",
       },
       {
         title:
           "Formulating goals and KPIs for all marketing and branding activities and processes",
-        img: "/box2.png",
+        img: "/box8.png",
       },
       {
         title:
           "Creating the content and media frameworks for the brand’s marketing communications for platform/app promotions",
-        img: "/box3.png",
+        img: "/box9.png",
       },
       {
         title: "Planning high-performance marketing initiatives for growth",
-        img: "/box4.png",
+        img: "/box10.png",
       },
       {
         title:
           "Project management and governance with creation of reporting formats",
-        img: "/box5.png",
+        img: "/box11.png",
       },
     ],
   },

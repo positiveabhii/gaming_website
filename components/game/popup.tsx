@@ -90,7 +90,12 @@ const GamePopup = ({
     setIsOpen(false);
     if (startTaskAnimte.length === 5 || startTaskAnimte.length === 0) {
       setstartGame(false);
-      setclickedOnPlayButton(false);
+      if (startTaskAnimte.length === 0) {
+        setclickedOnPlayButton(false);
+      } else {
+        setclickedOnPlayButton(true);
+        setpauseHere(true);
+      }
     } else {
       setstartGame(true);
     }

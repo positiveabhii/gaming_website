@@ -28,7 +28,7 @@ const Section3 = () => {
       {width > 550 ? (
         <>
           <div className="grid w-full max-w-[1300px] mx-auto grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-4">
-            {boxes.slice(0,4).map((info, index) => (
+            {boxes.slice(0, 4).map((info, index) => (
               <div
                 style={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
                 className="w-[257px] relative h-[246px] my-3 mx-auto px-3 pt-6 pb-1 flex flex-col items-start justify-between rounded-[22px] border-[#FFA927] bg-[#3B3B3B] border-solid border-2"
@@ -38,14 +38,11 @@ const Section3 = () => {
                   {info.info}
                 </p>
                 <div className="flex">
-                  <img alt={info.img} src={info.img} />
-                  {index === 1 && (
+                  <img className="max-w-[75px]" alt={info.img} src={info.img} />
+                  {index === 0 && (
                     <img
+                      className="max-w-[75px]"
                       alt={info.img}
-                      style={index === 1 ? { transform: "rotate" } : {}}
-                      className={
-                        index === 1 ? "absolute bottom-[45px] left-[40px]" : ""
-                      }
                       src={info.img}
                     />
                   )}
@@ -64,8 +61,19 @@ const Section3 = () => {
                   {info.info}
                 </p>
                 <div className="flex">
-                  <img alt={info.img} src={info.img} />
-                  {index === 0 && <img alt={info.img} src={info.img} />}
+                  <img className="max-w-[75px]" alt={info.img} src={info.img} />
+                  {index === 0 && (
+                    <img
+                      style={index === 0 ? { transform: "rotate" } : {}}
+                      className={
+                        index === 0
+                          ? "max-w-[75px] absolute bottom-[45px] left-[40px]"
+                          : "max-w-[75px]"
+                      }
+                      alt={info.img}
+                      src={info.img}
+                    />
+                  )}
                 </div>
               </div>
             ))}

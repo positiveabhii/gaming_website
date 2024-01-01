@@ -25,7 +25,7 @@ export const boxes = [
   },
   {
     info: "Mentoring and training industry teams on digital growth, marketing and transformation",
-    img: "/box6.png",
+    img: "/box8.png",
   },
 ];
 
