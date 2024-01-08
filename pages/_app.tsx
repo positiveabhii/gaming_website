@@ -7,13 +7,14 @@ import ScrollContextProvider from "../state/scrollContext";
 import Navbar from "@/components/navbar/navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import Head from "next/head";
 import Footer from "@/components/footer/footer";
 import "react-multi-carousel/lib/styles.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [hoveringOnContact, sethoveringOnContact] = useState(false);
+  const [hoveringOnMobile, sethoveringOnMobile] = useState(false);
   return (
     <Fragment>
       <Head>
@@ -51,6 +52,45 @@ export default function App({ Component, pageProps }: AppProps) {
         <SizeContextProvider>
           <Toaster />
           <Navbar />
+
+          <div
+            className="fixed z-[1000] rounded-lg cursor-pointer"
+            style={{
+              bottom: "300px",
+              right: "2px",
+              backgroundColor: hoveringOnMobile ? "#4a4a4a" : "#ffa115",
+              padding: "6px",
+            }}
+            onMouseEnter={() => sethoveringOnMobile(true)}
+            onMouseLeave={() => sethoveringOnMobile(false)}
+          >
+            {hoveringOnMobile && (
+              <div>
+                <h1 className="text-[#dadada]">Call Us</h1>
+              </div>
+            )}
+            <div className="flex items-center gap-3 ">
+              {hoveringOnMobile && (
+                <p className="text-[#dadada] font-medium">+919830601360</p>
+              )}
+              {hoveringOnMobile ? (
+                <a href="mailto:contact@platformplay.in">
+                  <FontAwesomeIcon
+                    icon={faPhone}
+                    color={hoveringOnMobile ? "#ffa115" : "#232323"}
+                    size="2x"
+                  />
+                </a>
+              ) : (
+                <FontAwesomeIcon
+                  icon={faPhone}
+                  color={hoveringOnMobile ? "#ffa115" : "#232323"}
+                  size="2x"
+                />
+              )}
+            </div>
+          </div>
+
           <div
             className="fixed z-[1000] rounded-lg cursor-pointer"
             style={{

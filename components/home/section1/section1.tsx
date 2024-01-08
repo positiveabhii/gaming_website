@@ -133,17 +133,25 @@ const Section1 = () => {
             height={50}
           />
         </div>
-        <h3
-          style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-          className="text-[#dadada] rajdhani w-[300px] mt-3 font-semibold text-md leading-[100.5%]"
-        >
-          Research-backed bespoke strategy roadmaps & project management for
-          Branding, Marketing, Brand Communications, Portals/Apps & Martech
-        </h3>
-        {/* <button className="bg-[#000000] rajdhani w-[150px] text-[#F2F2F2] flex items-center justify-center gap-2 rounded-full border-2 border-solid border-[#F2F2F2] py-2 px-3 mt-6">
-          <span>Get Started</span>
-          <img alt="arrowUp" src="/arrowUp.svg" width={15} height={15} />
-        </button> */}
+        <ul>
+          {[
+            "Research-backed bespoke marketing strategy",
+            "Branding & content strategy",
+            "Digital platform development & marketing",
+            "Emerging tech initiatives (AI, AR/VR, Gaming)",
+            "Training interventions",
+          ].map((it, id) => (
+            <li key={id} className="flex items-center gap-3 mt-3 justify-start">
+              <img width={15} height={15} alt="tile" src="/tile.png" />
+              <h3
+                style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
+                className="text-[#dadada] rajdhani w-[300px] font-semibold text-md leading-[100.5%]"
+              >
+                {it}
+              </h3>
+            </li>
+          ))}
+        </ul>
       </div>
       <TileParent />
     </section>

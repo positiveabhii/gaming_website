@@ -65,7 +65,7 @@ const Navbar = () => {
               </li>
             </ul>
           </li>
-          <li className="cursor-pointer group relative">
+          {/* <li className="cursor-pointer group relative">
             <div className="flex items-center justify-center gap-1">
               <span>Insights</span>
               <img
@@ -90,20 +90,12 @@ const Navbar = () => {
                 <a href="/insights#white-papers">White Papers</a>
               </li>
             </ul>
-          </li>
+          </li> */}
           <li className="cursor-pointer">
             <a href="/ourPartners">Our Partner Network</a>
           </li>
           <li className="cursor-pointer">
             <a href="/contactus">Contact Us</a>
-          </li>
-          <li className="cursor-pointer">
-            <a
-              href="tel:+919830601360
-"
-            >
-              Call Now
-            </a>
           </li>
         </ul>
       </nav>
@@ -159,7 +151,7 @@ const Navbar = () => {
                 </ul>
               )}
             </li>
-            <li className="cursor-pointer w-full">
+            {/* <li className="cursor-pointer w-full">
               <div
                 onClick={() => {
                   if (toggleOptionInMobile === "Insights") {
@@ -199,7 +191,7 @@ const Navbar = () => {
                   </li>
                 </ul>
               )}
-            </li>
+            </li> */}
             <li className="cursor-pointer">
               <a href="/ourPartners">Our Partner Network</a>
             </li>

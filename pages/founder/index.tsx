@@ -91,11 +91,8 @@ const Founder = () => {
 
         <div className="relative w-[90%] mx-auto z-[100] flex flex-col items-center gap-4 py-12">
           <h1
-            style={{
-              textShadow: "0px 4px 4px rgba(0, 0, 0, 0.91)",
-              flexShrink: 0,
-            }}
-            className={`text-[#F2F2F2] uppercase rajdhani font-semibold mt-3 ${
+            style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.91)" }}
+            className={`text-[#FFB545] uppercase rajdhani font-semibold mt-3 ${
               width > 906 ? "text-[50px]" : "text-[40px]"
             } leading-[137.5%]`}
           >
@@ -103,7 +100,7 @@ const Founder = () => {
           </h1>
           <h3
             style={{ textShadow: " 0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className={`text-[#FFA115] rajdhani font-normal leading-[137.5%]`}
+            className={`text-[#FFA115] rajdhani font-bold leading-[137.5%]`}
           >
             The PPV Vision
           </h3>
@@ -113,11 +110,8 @@ const Founder = () => {
                 {/* <FontAwesomeIcon icon={faHandPointRight} color="#dadada" /> */}
                 <h3
                   key={index}
-                  style={{
-                    textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-                    whiteSpace: "pre-line",
-                  }}
-                  className="text-[#dadada] rajdhani max-w-[1000px] w-[90%] mt-2 font-semibold text-sm leading-[150.5%]"
+                  style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
+                  className="text-white rajdhani max-w-[1000px] mt-3 font-semibold text-md leading-[150.5%]"
                 >
                   {content}
                 </h3>
@@ -126,7 +120,7 @@ const Founder = () => {
           </div>
           <h3
             style={{ textShadow: " 0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className={`text-[#FFA115] rajdhani font-normal leading-[137.5%]`}
+            className={`font-bold text-[#FFA115] rajdhani leading-[137.5%]`}
           >
             The PPV Consulting and Project Management Method
           </h3>

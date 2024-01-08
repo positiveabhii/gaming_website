@@ -12,7 +12,7 @@ export const boxes = [
     img: "/box3.png",
   },
   {
-    info: "Scoping of digital assets like customer acquisition portals and apps",
+    info: "Scoping of digital assets like customer acquisition portals & apps embedding AI, ML, AR/VR and gamification",
     img: "/box4.png",
   },
   {
@@ -20,18 +20,18 @@ export const boxes = [
     img: "/box5.png",
   },
   {
-    info: "Managing projects and providing advisory services to top management",
+    info: "Managing projects, digital product life cycles, etc. on behalf of top management & industry leaders",
     img: "/box6.png",
   },
   {
-    info: "Mentoring and training industry teams on digital growth, marketing and transformation",
+    info: "Mentoring and training industry teams on digital growth, marketing, customer experience, transformation, and sales using gamified modules ",
     img: "/box8.png",
   },
 ];
 
 export const clientTestimonial = [
   {
-    img: "/client/null.png",
+    img: "/client/teawah_logo.jpg",
     companyName: "Teawah India",
     clientName: "Shreya Chaki",
     designation: "Founder",
@@ -51,18 +51,18 @@ export const clientTestimonial = [
     designation: "CTO",
     words: `“Platform Play Venture has provided exemplary guidance and support during the marketing and branding strategy revamp of our company soon after I took charge as CTO. They have not only created a robust growth plan but also delivered well-designed brand assets including our new website, our brand branding guidelines manual and the social media creative templates. PPV has communicated promptly and effectively throughout with my team, ensuring timely delivery of projects by their partner vendors. It has been a very smooth experience working with the firm.”`,
   },
-  {
-    img: "/client/neprocare.png",
-    companyName: "Nephrocare India",
-    clientName: "Dr. Pratim Sengupta",
-    designation: "Director",
-    words: `“Platform Play Venture did the strategy and scoping for a platform I wanted to develop and launch. I appreciate the efforts they put into research, giving me a comprehensive idea about features and services offered by existing platforms and apps of a similar nature. They have also made relevant suggestions regarding the UI/UX of the platform and submitted the roadmap for a prototype to be developed by their preferred partner technology company.”`,
-  },
-  {
-    img: "/client/starinco.jpg",
-    companyName: "STARINCO",
-    clientName: "Suman Das",
-    designation: "Director",
-    words: `“I availed of Platform Play Venture’s creative strategy services. They made very useful suggestions regarding my communication model as well as my audio-visual asset creation processes. Content development was done very effectively by their partner visual communication experts. I have been happy with the services they provided.”`,
-  },
+  // {
+  //   img: "/client/neprocare.png",
+  //   companyName: "Nephrocare India",
+  //   clientName: "Dr. Pratim Sengupta",
+  //   designation: "Director",
+  //   words: `“Platform Play Venture did the strategy and scoping for a platform I wanted to develop and launch. I appreciate the efforts they put into research, giving me a comprehensive idea about features and services offered by existing platforms and apps of a similar nature. They have also made relevant suggestions regarding the UI/UX of the platform and submitted the roadmap for a prototype to be developed by their preferred partner technology company.”`,
+  // },
+  // {
+  //   img: "/client/starinco.jpg",
+  //   companyName: "STARINCO",
+  //   clientName: "Suman Das",
+  //   designation: "Director",
+  //   words: `“I availed of Platform Play Venture’s creative strategy services. They made very useful suggestions regarding my communication model as well as my audio-visual asset creation processes. Content development was done very effectively by their partner visual communication experts. I have been happy with the services they provided.”`,
+  // },
 ];

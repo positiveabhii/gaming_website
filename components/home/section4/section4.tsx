@@ -39,7 +39,7 @@ const Section4 = () => {
                 <img
                   alt="Man"
                   src={itm.img}
-                  className="object-cover rounded-md"
+                  className="object-cover max-w-[100px] rounded-md"
                   // className="h-14 w-14 rounded-full object-cover"
                 />
 

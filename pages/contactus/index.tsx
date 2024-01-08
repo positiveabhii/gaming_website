@@ -9,6 +9,7 @@ import Head from "next/head";
 import css from "./contact.module.css";
 import { sendContactForm } from "@/lib/api";
 import { SEO, getSEOById } from "@/firebase/function";
+import { UseSizeContext } from "@/state/context";
 
 type EnquiringForType =
   | "Startup Consulting"
@@ -152,6 +153,7 @@ const Contact = () => {
     },
   };
 
+  const { width } = UseSizeContext();
   const [seoContent, setseoContent] = useState<SEO | null>(null);
 
   useEffect(() => {
@@ -195,7 +197,14 @@ const Contact = () => {
         </div>
 
         <div className="relative z-[100] flex flex-col items-center gap-4 py-12">
-          <TitleText text="Contact Us" isAbsolute={false} />
+          <h1
+            style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.91)" }}
+            className={`text-[#FFB545] uppercase text-center rajdhani font-semibold mt-3 ${
+              width > 906 ? "text-[50px]" : "text-[40px]"
+            } leading-[137.5%]`}
+          >
+            Contact Us
+          </h1>
           <form
             // style={{
             //   background: "rgba(51, 51, 51, 0.49)",

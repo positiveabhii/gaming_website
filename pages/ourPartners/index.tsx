@@ -226,7 +226,15 @@ const Partner = () => {
         className="w-full flex min-h-screen flex-col justify-center"
       >
         <div className="max-w-[1300px] mx-auto py-16">
-          <TitleText isAbsolute={false} text="Our Partners" />
+          <h1
+            style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.91)" }}
+            className={`text-[#FFB545] uppercase text-center rajdhani font-semibold mt-3 ${
+              width > 906 ? "text-[50px]" : "text-[40px]"
+            } leading-[137.5%]`}
+          >
+            Our Partners
+          </h1>
+
           <div className="w-[90%] mx-auto">
             {partnerTopContent.map((text, index) => (
               <h3
