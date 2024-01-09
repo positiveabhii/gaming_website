@@ -15,7 +15,7 @@ const BackCircles = ({ inView, direction, whichPage }: Prop) => {
     if (whichPage === "Home") {
       return ["bg-[#7f7f7f]", "bg-[#707070]", "bg-[#696969]"];
     } else {
-      return ["bg-[#525151]", "bg-[#4a4a4a]", "bg-[#434343]"];
+      return ["bg-[#373636]", "bg-[#403F3F]", "bg-[#434343]"];
     }
   }
 

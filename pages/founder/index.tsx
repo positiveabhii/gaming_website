@@ -110,8 +110,11 @@ const Founder = () => {
                 {/* <FontAwesomeIcon icon={faHandPointRight} color="#dadada" /> */}
                 <h3
                   key={index}
-                  style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-                  className="text-white rajdhani max-w-[1000px] mt-3 font-semibold text-md leading-[150.5%]"
+                  style={{
+                    textShadow: "0px 20px 20px rgba(0, 0, 0, 0.0)",
+                    color: "#FFFFFF",
+                  }}
+                  className="rajdhani max-w-[1000px] w-[90%] mx-auto mt-3 font-semibold text-md leading-[150.5%]"
                 >
                   {content}
                 </h3>
