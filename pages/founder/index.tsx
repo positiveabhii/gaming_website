@@ -15,7 +15,6 @@ import dynamic from "next/dynamic";
 import Carousel from "react-multi-carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faHandPointRight } from "@fortawesome/free-solid-svg-icons";
 import { getSEOById, SEO } from "../../firebase/function";
 import Head from "next/head";
 
@@ -100,7 +99,7 @@ const Founder = () => {
           </h1>
           <h3
             style={{ textShadow: " 0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className={`text-[#FFA115] rajdhani font-bold leading-[137.5%]`}
+            className={`text-[#dadada] rajdhani font-bold leading-[137.5%]`}
           >
             The PPV Vision
           </h3>
@@ -123,7 +122,7 @@ const Founder = () => {
           </div>
           <h3
             style={{ textShadow: " 0px 4px 4px rgba(0, 0, 0, 0.25)" }}
-            className={`font-bold text-[#FFA115] rajdhani leading-[137.5%]`}
+            className={`font-bold text-[#dadada] rajdhani leading-[137.5%]`}
           >
             The PPV Consulting and Project Management Method
           </h3>
