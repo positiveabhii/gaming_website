@@ -1,9 +1,5 @@
 {
   "version": 2,
-  "cleanUrls": true,
-  "git": {
-    "deploymentEnabled": false
-  },
   "redirects": [
     {
       "source": "/(.*)",
@@ -12,4 +8,3 @@
     }
   ]
 }
-
