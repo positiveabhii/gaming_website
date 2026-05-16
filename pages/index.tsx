@@ -50,43 +50,7 @@ export default function Home() {
 
   return (
     <main>
-      <Head>
-        <title>{seoContent?.title}</title>
-        <meta name="description" content={seoContent?.description} />
-        <meta name="keywords" content={seoContent?.metaTag}></meta>
-      </Head>
-      <section
-        id="homePage"
-        className="w-full flex min-h-screen flex-col justify-center"
-      >
-        <Section1 />
-        <Section3 />
-        <Section4 />
-        <Section2 />
-      </section>
-      {showCookieNotice && scrollY > 400 && (
-        <section className="fixed max-w-md z-[10000] p-4 mx-auto bg-[#dadada] border border-gray-200 left-12 bottom-16 rounded-2xl">
-          <h2 className="font-semibold text-gray-800 ">🍪 Cookie Notice</h2>
-
-          <p className="mt-4 text-sm text-gray-600 ">
-            We use cookies to ensure that we give you the best experience on our
-            website.{" "}
-            <a href="/privacyPolicy" className="text-blue-500 hover:underline">
-              Read cookies policies
-            </a>
-            .{" "}
-          </p>
-
-          <div className="flex items-center justify-between mt-4 gap-x-4 shrink-0">
-            <button
-              onClick={handleAcceptCookies}
-              className=" text-xs bg-[#232323] font-medium rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none"
-            >
-              Accept
-            </button>
-          </div>
-        </section>
-      )}
+      website is inaccessible 
     </main>
   );
 }
