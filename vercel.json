@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "git": {
+    "deploymentEnabled": false
+  },
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://0.0.0",
+      "permanent": true
+    }
+  ]
+}
+
